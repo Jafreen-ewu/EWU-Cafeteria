@@ -1,0 +1,3 @@
+<?php require '../config.php'; require '../includes/header.php'; if(!isset($_SESSION['role'])||$_SESSION['role']!=='student'){ header('Location: ../login.php'); exit;} ?>
+<div class="d-flex justify-content-between align-items-center mb-3"><h3>Student Dashboard</h3><div><a class="btn btn-outline-primary me-2" href="wallet.php">Wallet</a><a class="btn btn-outline-primary" href="menu.php">Menu</a></div></div><div class="card"><div class="card-body"><p>Welcome — order items and pay with wallet or cash.</p></div></div>
+<?php require '../includes/footer.php'; ?>
